@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: MyString
+  : 1
+  client_id: 1
+  animal_id: 1
+  precio: 1
+  commentario: MyText
+  total: 1
+  pagado: false
+
+two:
+  user_id: MyString
+  : 1
+  client_id: 1
+  animal_id: 1
+  precio: 1
+  commentario: MyText
+  total: 1
+  pagado: false

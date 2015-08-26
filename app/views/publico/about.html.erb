@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+</head>
+
+<body>
+
+
+<!-- Main content starts -->
+
+<div class="content">
+
+  <!-- Sidebar starts -->
+  <%= render(:partial => 'publico/sidebar')%>
+  <!-- Sidebar ends -->
+
+  <!-- Mainbar starts -->
+  <div class="mainbar">
+
+     <!-- Contact box starts  slide-->
+    <%= render(:partial => 'publico/contact')%>    
+    <!-- Contact box ends slide -->
+
+
+
+    <div class="matter">
+      <div class="container-fluid">
+
+        <!-- Title starts -->
+        <div class="page-title">
+          <h2>Nosotros</h2>          
+          <hr />
+        </div>
+        <!-- Title ends -->
+
+       
+
+
+        <!-- Content starts -->
+
+        <div class="box-body blog">
+          <div class="row-fluid">
+
+                        <div class="span8">
+                           <div class="recent-posts">
+                           
+                              <!-- Each posts should be enclosed inside "entry" class" -->
+                              <!-- Post one -->
+                              <div class="entry">
+                                         
+                                 <!-- Thumbnail -->
+                                 <div class="bthumb">
+                                    <%= image_tag "./vet/equipom.jpg" %>                                  
+                                 </div>
+                                 <h2><a href="#">Mision</a></h2>
+                                 <!-- Para -->
+                                 <p>Proporcionar servicios de calidad satisfaciendo la  necesidad de tus mascotas, estando a la vanguardia de tacticas veterinarias y medicinales,manteniendonos en constante capacitacion para que mediante nuestro esfuerzo y experiencia lograr el bienestad de tus  preciadas mascotas.</p>
+
+                                 
+                              </div>
+                              
+                              <!-- Post 2 -->
+                              <div class="entry">
+                                                                               
+                                 <!-- Thumbnail -->
+                                 <div class="bthumb">
+                                    <%= image_tag "./vet/equipo.jpg" %>
+                                 </div>
+                                 <h2><a href="#">Vision</a></h2>
+                                 <p>Ser una empresa  competitiva a nivel  nacional e internacional proveyendo servicios integrales que beneficien el  medio hambiente  an el que se desarrollan las mascotas</p>
+                                 
+                              </div>
+                              
+                             
+
+                              
+                              
+                           </div>
+                        </div>  
+
+                        <div class="span4">
+                          
+                           <%= image_tag "./vet/doc.jpg" %>
+                            <h2><a href="#">Valores</a></h2>
+                            <ul>
+                               <li>Honestidad</li>
+                               <li>Confianza</li>
+                               <li>Integridad</li>
+                               <li>Buen trato</li>
+                            </ul>
+                                                
+                        </div>
+                  
+
+          </div>
+        </div>
+        
+        <!-- Content ends -->
+
+      </div>
+    </div>
+                     
+
+  </div>
+  <!-- Mainbar ends -->
+
+ 
+
+</div>
+
+
+
+<!-- Main content ends -->
+
+	
+
+<!-- Scroll to top -->
+<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span> 
+
+
+</body>
+</html>

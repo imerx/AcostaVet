@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: MyString
+  nacio_el: 2013-05-13
+  client_id: MyString
+  sexo: MyString
+  color: MyString
+  raza: MyString
+  comentario: MyText
+  historial_id: 1
+  vacunas_id: 1
+
+two:
+  nombre: MyString
+  nacio_el: 2013-05-13
+  client_id: MyString
+  sexo: MyString
+  color: MyString
+  raza: MyString
+  comentario: MyText
+  historial_id: 1
+  vacunas_id: 1

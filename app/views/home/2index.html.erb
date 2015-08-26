@@ -1,0 +1,32 @@
+<div id='calendar'></div>
+<div class="row">
+
+	<div class="hero-unit">
+		<div class="row-fluid">
+			<div class="span8">
+
+				<% if current_user %>
+					<h3>Hello <%= current_user.email %></h3>
+					<%= link_to "Log out", destroy_user_session_path, :method => :delete %>
+				<% else %>
+					<h1> Veterinaria Acosta </h1>
+				<% end %>
+				<hr>
+				<h3>Features</h3>
+				<ul>
+					<li>
+						<strong>Front-end</strong>
+						
+					</li>
+					<li>
+						<strong>Back-end</strong>
+							
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+	</div>
+</div>

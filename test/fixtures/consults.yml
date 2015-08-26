@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  vacuna_id: 1
+  servicio_id: 1
+  doctor_id: 1
+  receta_id: 1
+  animal_id: 1
+
+two:
+  vacuna_id: 1
+  servicio_id: 1
+  doctor_id: 1
+  receta_id: 1
+  animal_id: 1

@@ -1,0 +1,9 @@
+
+= link_to 'Nueva Cita', new_event_path, :class => 'ysheets'
+%br
+%br
+%br
+- events.each do |e|
+  = link_to e.name, edit_event_path(e)
+  %br
+  %br

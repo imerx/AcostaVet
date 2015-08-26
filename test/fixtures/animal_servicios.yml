@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  servicio_id: 1
+  doctor_id: 1
+  cliente_id: 1
+  animal_id: 1
+  pago: false
+
+two:
+  servicio_id: 1
+  doctor_id: 1
+  cliente_id: 1
+  animal_id: 1
+  pago: false

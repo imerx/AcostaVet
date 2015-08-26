@@ -1,0 +1,92 @@
+// Active Admin CSS Styles
+@import "active_admin/mixins";
+@import "active_admin/base";
+@import "fullcalendar1";
+@import "just_datetime_picker/base";
+
+// To customize the Active Admin interfaces, add your
+// styles here:
+
+
+
+.price {
+  text-align :left;
+}
+.total{
+  text-align :right;
+}
+//background activeadmin
+
+body.active_admin {
+      background: #6090DB;
+      font-size: 16px;   
+  }
+
+  // contenido
+ 
+   
+  #main_content {
+  background: #fff;
+   padding:5px 5px 5px 5px;
+   border-radius: 5px !important;
+   margin-bottom: 10px;
+  }
+   
+   body.active_admin #title_bar.title_bar{
+       background-color: #DBFFE2;
+    background-image: -moz-linear-gradient(center top , #FEFFE3, #F5DBB0);
+   }
+
+  .download_links {
+  color :red;
+  font-size: 14px;
+  }
+  // footer
+
+ #footer  {
+   background: #F7E6B2;
+    max-height: 40px;
+ }
+
+ //  header
+
+
+body.active_admin #header {
+ min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+   padding-top: 20px;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  *zoom: 1;
+  background-color: #DBFFE2;
+  background-image: -moz-linear-gradient(center top , #A9AAB0, #55585E);
+}
+body.active_admin #header #utility_nav, body.active_admin #header a, body.active_admin #header a:link, body.active_admin #header ul#tabs > li a {
+  color: #F5DBB0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+body.active_admin #header ul#tabs > li.current > a{
+  color: #FFF;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  }
+ 
+//sidebar color
+
+body.active_admin .section > div, body.active_admin .panel > div{
+  text-align: center;
+  background-color: #BAF7F1;
+}
+

@@ -1,0 +1,12 @@
+%p
+  %p
+.span6
+  .post-show
+    .page-title
+      %h1 Editar comentario
+      %br/
+    = render 'publico/new'
+
+    = link_to 'Mostrar', @post, :class => 'btn btn-danger'
+    \|
+    = link_to 'volver', posts_path, :class => 'btn btn-primary'

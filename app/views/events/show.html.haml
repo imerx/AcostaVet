@@ -1,0 +1,39 @@
+%p
+  %p
+.span6
+  .post-show
+    .page-title
+      %h1 Editar comentario
+      %br/
+      %strong Nombre:
+      = event.name
+      %br
+      %strong Descripcion:
+      = event.description
+      %br
+      %strong De:
+      = event.from_date
+      = event.from_time
+      %br
+      %strong A:
+      = event.to_date
+      = event.to_time
+      %br
+      %strong Duracion:
+      = event.schedule.duration
+      %br
+      %strong Horario:
+      = event.schedule
+      %br
+
+      %strong Lo que viene:
+    - event.schedule.first(5).each do |e|
+      %br
+      = e.to_s
+
+.span3.pull-left
+  = link_to 'Regresar a calendario', calendars_path, :class => 'btn btn-danger'
+  = link_to 'Editar', edit_event_path(event), :class => 'btn btn-primary'
+
+
+

@@ -1,0 +1,5 @@
+ <% animals.each do |animal| %>
+        <p><%= link_to animal.nombre, admin_client_animal_path(client,animal) %></p>
+    <% end %>
+
+

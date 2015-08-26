@@ -1,0 +1,20 @@
+
+<div id="product-description">
+  <% if @product.description %>
+    <%= simple_format @product.description %>
+  <% else %>
+    <p><em>No Description</em></p>
+  <% end %>
+
+  <p>
+    <strong>Price:</strong>
+    <%= number_to_currency @product.price %> 
+    (<%= link_to "Add to Card", add_to_cart_path(@product.id) %>)
+  </p>
+
+  
+  <p> <%= link_to "Back to All Products", admin_products_path %> </p>
+</div>
+
+<div style="clear:both;"></div>
+

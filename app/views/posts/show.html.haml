@@ -1,0 +1,24 @@
+
+%p
+.span6
+  .post-show
+
+    %p
+      %h1 Mi comentario
+    %b Username:
+    = @post.username
+    %p
+    %b Servicio:
+    = @post.servicio
+    %p
+    %b Comentario:
+    = @post.comentario
+    %p
+   
+    
+
+
+  = link_to 'Editar Comentario', edit_post_path(@post), :class => 'btn btn-danger'
+  \
+  = link_to 'volver ', root_path, :class => 'btn btn-primary'
+

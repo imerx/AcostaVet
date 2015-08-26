@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  historia: MyText
+  peso: MyString
+  temperatura: MyString
+  observaciones: MyString
+  animal_id: 1
+
+two:
+  historia: MyText
+  peso: MyString
+  temperatura: MyString
+  observaciones: MyString
+  animal_id: 1

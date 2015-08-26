@@ -1,0 +1,32 @@
+
+
+<div clas="form">
+        <%= simple_form_for @post ,  :honeypot => true do |f| %> 
+
+             <div class="control-group">  
+                              
+                  <%= f.input :username %>               
+             </div>
+
+              <div class="control-group">                 
+                  <%= f.input :servicio %>             
+              </div>
+
+               <div class="control-group">               
+                  <%= f.input :comentario , :input_html => {:rows => 5}%>   
+                </div>
+            
+
+               <div style="display:none ">             
+                  <%=  f.input :honeyput %>
+                </div>
+          
+
+               <div class="form-actions">                   
+                 <%= f.submit 'Agregar' %>
+               </div>
+
+                 
+            <% end %>   
+
+        </div

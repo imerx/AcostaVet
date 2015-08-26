@@ -1,0 +1,51 @@
+!!! 5
+%html(lang="en")
+	%head
+		%meta(charset="utf-8")
+		%meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
+		%meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		%title= content_for?(:title) ? yield(:title) : "AcostaVet"
+		= stylesheet_link_tag "application", :media => "all"
+		= csrf_meta_tags
+		/ Le HTML5 shim, for IE6-8 support of HTML elements
+		/[if lt IE 9]
+			
+		
+		= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144'
+		= favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114'
+		= favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72'
+		= favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
+		
+ 
+
+	%body
+		.navbar.navbar-fixed-top
+			.navbar-inner
+				.container-fluid
+					%a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
+						%span.icon-bar
+						%span.icon-bar
+						%span.icon-bar
+						%a.brand(href="#") 
+					.container.nav-collapse
+						%ul.nav.pull-right
+							- if user_signed_in?
+								%li= link_to " Citas", admin_citas_path
+								%li= link_to " Calendario", calendars_path
+								%li= link_to " Tienda", admin_ventas_path
+								%li= link_to " admin", admin_root_path
+								%li= link_to "Log out", destroy_user_session_path, :method => :delete
+							- else       
+								%li= link_to "Log in", new_user_session_path
+
+		
+		
+		.container-fixed
+			.row-fluid         
+				= bootstrap_flash
+				= yield
+			%footer
+			= render :partial => 'publico/foot'	
+		= javascript_include_tag "application"  
+		
+		= yield :footer
