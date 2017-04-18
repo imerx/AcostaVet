@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-
+before_filter :authenticate_user!, except: [:index, :show]
     
   require 'footer.rb'
   # define this method in applicaton_controller.rb
