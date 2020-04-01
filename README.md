@@ -1,7 +1,7 @@
 # AcostaVet
-Demo Gestion de Veterinaria
-This is initial project that show  the  management of a custom  clinic veterinary 
-are implemented activeadmind 4.0 , bootstrap, fullcalendar, prawn, etc  to show the processes of the vet.
+Demo Admin Vet
+This is initial project shows  the  management of veterinary clicnic, this project was written in Ruby in rails gems 
+ implemented, activeadmind 4.0 , bootstrap, fullcalendar, prawn, js etc.
 
 
 
