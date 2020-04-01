@@ -80,7 +80,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     fastercsv (1.5.5)
-    ffi (1.9.3)
+    ffi (1.12.2)
     formtastic (2.2.1)
       actionpack (>= 3.0)
     fullcalendar-rails (1.5.4.0)
